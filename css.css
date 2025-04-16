@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+
+    margin: 0px;
+
+    background-color: rgba(64, 64, 64, 0.973);
+
+    color: white;
+}
+
+main{
+
+    margin-left: 20px;
+
+    margin-right: 20px;
+
+}
+
+h1{
+
+    text-align: center;
+
+}
+
+.navbar ul{
+
+    list-style-type: none;
+
+    background-color: hsl(0, 0%, 25%);
+
+    padding: 0px;
+
+    margin: 0px;
+
+    overflow: hidden;
+
+    position: fixed;
+
+    width: 100%;
+
+    text-shadow: rgb(64,64,64) 10px 10px 10px;
+
+    border: solid rgb(53, 52, 52) 3px;
+}
+
+.navbar a{
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 15px;
+
+    display: block;
+
+    text-align: center;
+
+}
+
+.navbar a:hover{
+
+    background-color: hsl(0, 0%, 10%);
+
+}
+
+.navbar li{
+
+    float: right;
+
+}
+.navbar img{
+    padding: 10px;
+
+    display: block;
+
+    text-align: center;
+
+    float: left;
+
+    height: 30px;
+
+    border-radius: 100px;
+
+    cursor: pointer;
+
+    transition: 2s;
+
+}
+.navbar img:hover{
+    rotate: 360deg;
+
+}
+.title{
+    background-color: rgb(69,179,139);
+
+    display: flex;
+
+    justify-content: center;
+    
+    align-items: center;
+
+    text-align: center;
+
+    height: 100px;
+}
+.image a{
+    background-color: none;
+    
+    color: white;
+
+    text-decoration: none;
+
+    padding: 0px;
+
+    display: none;
+
+    width: 10px;
+
+    text-align: center;
+}
