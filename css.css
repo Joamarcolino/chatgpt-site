@@ -1,123 +1,94 @@
-*{
+* {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
-body{
 
-    margin: 0px;
-
+/* Base Styles */
+body {
+    margin: 0;
+    padding: 0;
     background-color: rgba(64, 64, 64, 0.973);
-
     color: white;
+    font-family: sans-serif;
+    min-height: 100vh;
 }
 
-main{
-
-    margin-left: 20px;
-
-    margin-right: 20px;
-
-}
-
-h1{
-
-    text-align: center;
-
-}
-
-.navbar ul{
-
+/* Navbar Styles */
+.navbar ul {
     list-style-type: none;
-
     background-color: hsl(0, 0%, 25%);
-
-    padding: 0px;
-
-    margin: 0px;
-
-    overflow: hidden;
-
     position: fixed;
-
+    top: 0;
+    left: 0;
     width: 100%;
-
-    text-shadow: rgb(64,64,64) 10px 10px 10px;
-
-    border: solid rgb(53, 52, 52) 3px;
-}
-
-.navbar a{
-
-    color: white;
-
-    text-decoration: none;
-
-    padding: 15px;
-
-    display: block;
-
-    text-align: center;
-
-}
-
-.navbar a:hover{
-
-    background-color: hsl(0, 0%, 10%);
-
-}
-
-.navbar li{
-
-    float: right;
-
-}
-.navbar img{
-    padding: 10px;
-
-    display: block;
-
-    text-align: center;
-
-    float: left;
-
-    height: 30px;
-
-    border-radius: 100px;
-
-    cursor: pointer;
-
-    transition: 2s;
-
-}
-.navbar img:hover{
-    rotate: 360deg;
-
-}
-.title{
-    background-color: rgb(69,179,139);
-
     display: flex;
-
-    justify-content: center;
-    
     align-items: center;
-
-    text-align: center;
-
-    height: 100px;
+    justify-content: flex-end;
+    padding: 10px 20px;
+    border-bottom: solid rgb(53, 52, 52) 3px;
+    text-shadow: rgb(64, 64, 64) 10px 10px 10px;
+    z-index: 1000;
 }
-.image a{
-    background-color: none;
-    
+h3{
+    margin-bottom: 45px;
+}
+h1{
+    animation: leftandright 2s ease-in-out infinite;
+}
+
+.navbar li {
+    margin: 0 10px;
+}
+
+.navbar a {
     color: white;
-
     text-decoration: none;
-
-    padding: 0px;
-
-    display: none;
-
-    width: 10px;
-
-    text-align: center;
+    font-size: 24px;
+    padding: 8px 12px;
+    display: block;
+    transition: background-color 0.3s;
 }
+
+.navbar a:hover {
+    background-color: hsl(0, 0%, 10%);
+}
+
+/* Logo Image */
+.navbar img {
+    max-height: 50px;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: transform 1.5s ease;
+}
+.navbar img a{
+    border-radius: 100px;
+}
+
+.navbar img:hover {
+    transform: rotate(360deg);
+}
+
+/* Title Section */
+.title {
+    background-color: rgb(69, 179, 139);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+    margin-top: 80px;
+}
+
+/* Main Content */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+@keyframes leftandright {
+    25%  { transform: rotate(30deg); }
+    75%  { transform: rotate(-30deg); }
+  }
