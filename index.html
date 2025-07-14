@@ -11,17 +11,60 @@
 </head>
 
 <body>
+    <nav class="navbar">
+        <ul class="sidepages">
+            <li><a  onclick="Hidesidepages()" style="display: flex; justify-content: end;"><svg
+                        xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px"
+                        fill="#21D694">
+                        <path
+                            d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                    </svg></a>
+            </li>
+            <li> <a id="home">Home</a></li>
+            <li class="hidepages"><a href="./Pages/founder.html">Founder</a></li>
+            <li class="hidepages"><a href="./Pages/history.html">History</a></li>
+            <li class="hidepages"><a href="./Pages/examples.html">Examples</a></li>
+            <li id="chatgptimage">
+                <a class="image" href="https://chatgpt.com/">
+                    <img src="./img/chatgpt-logo-chat-gpt-icon-on-green-background-free-vector.jpg" alt="ChatGPT Logo">
+                </a>
+            </li>
+        </ul>
+        <ul class="pages">
+            <li id="chatgptimage">
+                <a class="image" href="https://chatgpt.com/">
+                    <img src="./img/chatgpt-logo-chat-gpt-icon-on-green-background-free-vector.jpg" alt="ChatGPT Logo">
+                </a>
+            </li>
+            <div class="hide">
+                <li> <a id="home">Home</a></li>
+                <li><a href="./Pages/founder.html">Founder</a></li>
+                <li><a href="./Pages/history.html">History</a></li>
+                <li><a href="./Pages/examples.html">Examples</a></li>
+            </div>
+            <li class="pages-menu">
+                <a onclick="Showsidepages()">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px"
+                        fill="#21D694">
+                        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </nav>
     <header id="content">
         <section>
             <div class="imageandtextblocks">
                 <div class="text-blocks">
                     <h1>What is ChatGPT?</h1>
-                    <div class="text-blockscroll">
+                    <div class="text-blockarea">
                         <p class="text">
                             <span class="TextContent">
-                                ChatGPT is an advanced language model developed by OpenAI, based on the GPT
-                                (Generative
-                                Pre-trained Transformer) architecture. It is designed to understand and generate
+                                <b>ChatGPT</b> is an <strong>advanced language model</strong>
+                                <strong>developed by OpenAI</strong>, based on the <b>GPT</b><strong>
+                                    (Generative
+                                    Pre-trained Transformer)</strong> architecture. It is <strong>designed to
+                                    understand</strong> and generate
                                 human-like
                                 language, enabling it to carry out a wide range of conversational and task-oriented
                                 functions.
@@ -32,17 +75,23 @@
                             <span class="more">
                                 While it may appear to simply "chat," its capabilities go far beyond casual
                                 conversation.
-                                At its core, ChatGPT processes and generates human language. It utilizes complex neural
+                                At its core, <b>ChatGPT</b> <strong>processes and generates human
+                                    language</strong>. It
+                                utilizes complex neural
                                 networks to break down text inputs into manageable parts (called tokens) and analyzes
                                 their
                                 structure, intent, and meaning. This enables it to:
-                                Interpret user queries, even if phrased informally or with ambiguity;
+                                <strong>Interpret user queries</strong>, even if phrased informally or with ambiguity;
                                 Determine the intent behind a question or request;
-                                Maintain conversational context to ensure coherent, relevant responses.
+                                Maintain conversational context to ensure <strong>coherent, relevant responses</strong>.
                                 Its function is similar to a supercharged predictive text system, capable of sustaining
-                                detailed and meaningful interactions across a wide range of topics.
+                                detailed and <strong>meaningful interactions</strong> across a wide range of topics.
                             </span>
-                            <button class="readmorebtn">Show more</button>
+                              <button class="readmorebtn">Show more</button>
+                             <div>
+                                <button  class="keywordsbtnenabler">Enable key-words</button>
+                                <button  class="keywordsbtndisabler">Disable key-words</button>
+                            </div>
                         </p>
                     </div>
                 </div>
@@ -50,34 +99,49 @@
             <div class="imageandtextblocks">
                 <div class="text-blocks">
                     <h1>What makes it special?</h1>
-                    <div class="text-blockscroll">
+                    
+                    <div class="text-blockarea">
                         <p class="text">
                             <span class="TextContent">
-                                What sets ChatGPT apart from basic chatbots is its ability to adapt its tone, style, and
-                                complexity depending on the user's needs. It can hold multi-turn conversations, remember
-                                details from earlier in a discussion, and provide responses that are logically
-                                consistent
-                                and contextually appropriate.
+                                What sets <b>ChatGPT</b> apart from basic chatbots is its <strong>ability to
+                                    adapt</strong> its tone, style, and
+                                complexity depending on the user's needs. It can hold multi-turn conversations,
+                                <strong>remember details</strong> from earlier in a discussion, and provide
+                                <strong>responses that are logically
+                                    consistent</strong>
+                                and <strong>contextually appropriate</strong>.
                             </span>
                             <br />
                         </p>
                         <p class="text">
                             <span class="more">
-                                It is capable of generating written content across a broad range of formats—such as
+                                It is capable of <strong>generating written content</strong> across a <strong>broad
+                                    range of formats</strong>—such as
                                 essays,
-                                stories, dialogue, technical documentation, business emails, and more—and can even mimic
-                                specific writing styles or personas when prompted.
-                                Beyond writing, ChatGPT also serves as a capable assistant for problem-solving. It can
-                                perform mathematical reasoning, assist with planning, summarize complex topics,
-                                brainstorm
-                                ideas, and help users weigh decisions. For those working in programming, it can write
+                                stories, dialogue, technical documentation, business emails, and more—and can even
+                                <strong>mimic
+                                    specific writing styles</strong> or personas when prompted.
+                                Beyond writing, <b>ChatGPT</b> also serves as a <strong>capable assistant
+                                    for problem-solving</strong>. It can
+                                perform <strong>mathematical reasoning</strong>, assist with <strong>planning</strong>
+                                ,<strong>summarizing</strong> complex topics,
+                                <strong>brainstorm</strong>
+                                ideas, and help users weigh decisions. For those working in programming, it can
+                                <strong>write and
+                                    review code</strong>
+                                in <strong>many programming languages</strong>, explain software development concepts,
                                 and
-                                review code in many programming languages, explain software development concepts, and
                                 troubleshoot errors step by step.
-                                In more advanced versions, ChatGPT can analyze and respond to images, allowing it to
-                                interpret visual inputs such as diagrams, photos, screenshots, and handwritten notes.
+                                In more advanced versions, <b>ChatGPT</b> can <strong>analyze and respond to
+                                    images</strong>, allowing it to
+                                <strong>interpret visual inputs</strong> such as diagrams, photos, screenshots, and
+                                handwritten notes.
                             </span>
                             <button class="readmorebtn">Show more</button>
+                             <div>
+                                <button  class="keywordsbtnenabler">Enable key-words</button>
+                                <button  class="keywordsbtndisabler">Disable key-words</button>
+                            </div>
                         </p>
                     </div>
                 </div>
@@ -85,52 +149,82 @@
             <div class="imageandtextblocks">
                 <div class="text-blocks">
                     <h1>What is it's purpose?</h1>
-                    <div class="text-blockscroll">
+                    <div class="text-blockarea">
                         <p class="text">
                             <span class="TextContent">
-                                The purpose of ChatGPT is to serve as a versatile language-based artificial intelligence
+                                The <strong>purpose of</strong>
+                                <strong2>ChatGPT</strong2> is to <strong>serve</strong> as a <strong>versatile
+                                    language-based artificial intelligence</strong>
                                 designed to
-                                assist humans in understanding, creating, and interacting with information through
+                                <strong>assist humans</strong> in understanding, creating, and <strong>interacting with
+                                    information</strong> through
                                 natural language.
-                                Developed by OpenAI, its core objective is to make knowledge, communication, and
+                                <strong>Developed by OpenAI</strong>, its core objective is to make knowledge,
+                                communication, and
                                 problem-solving more
-                                accessible by enabling people to interact with machines in the same way they communicate
-                                with each other—
+                                accessible by <strong>enabling people to interact with machines</strong> in the
+                                <strong>same way they communicate
+                                    with each other</strong>—
                                 through conversation.
                             </span>
                             <br />
                         </p>
                         <p class="text">
                             <span class="more">
-                                ChatGPT is intended to act as a general-purpose assistant that can be applied across a
-                                wide range of domains. Whether it's helping someone write a document, explain a
-                                scientific concept, debug computer code, brainstorm ideas, translate text, or answer
-                                factual questions, ChatGPT's role is to bridge the gap between human intention and
-                                digital tools by using language as the medium. It is designed to reduce the friction
-                                between people and complex information, offering guidance, clarity, and support in a way
-                                that feels intuitive and responsive
+                                <strong2>ChatGPT</strong2> is intended to act as a <strong>general-purpose
+                                    assistant</strong> that can be applied across a
+                                wide range of domains. Whether it's <strong>helping someone write a document</strong>,
+                                <strong>explain a scientific concept</strong>, <strong>debug computer code</strong>,
+                                <strong>brainstorm ideas</strong>, <strong>translate text</strong>, or <strong>answer
+                                    factual questions</strong>, <b>ChatGPT</b>'s role is to <strong>bridge
+                                    the gap between human intention and digital tools</strong> by using language as the
+                                medium. It is designed to <strong>reduce the friction between people and complex
+                                    information</strong>, <strong>offering guidance</strong>, clarity,
+                                and support in a way that feels intuitive and responsive.
 
-                                A key goal behind ChatGPT is democratizing access to expertise. By embedding large-scale
-                                language understanding into a user-friendly interface, it allows individuals—regardless
-                                of their background or skill level—to receive help on tasks that would otherwise require
-                                specialized knowledge. This includes education, creative writing, technical development,
-                                language learning, and much more.
-                                Another part of its mission is to assist with productivity and decision-making. ChatGPT
-                                can help users explore ideas, organize thoughts, outline plans, and generate written
-                                material efficiently. It is also designed to enhance learning, providing explanations
-                                and answers that can be tailored to different levels of understanding
+                                A key goal behind <b>ChatGPT</b> is <strong>democratizing access to
+                                    expertise</strong>. By embedding <strong>large-scale
+                                    language understanding</strong> into a user-friendly interface, it allows
+                                individuals—regardless
+                                of their background or skill level—to <strong>receive help on tasks that would otherwise
+                                    require
+                                    specialized knowledge</strong>. This includes <strong>education</strong>,
+                                <strong>creative writing</strong>, <strong>technical development</strong>,
+                                <strong>language learning</strong>, and much more.
 
-                                While it mimics conversation, ChatGPT is not meant to replace human interaction.
-                                Instead, its purpose is to augment human capability—acting as a tool that can support
-                                thinking, communication, and creation in both professional and personal contexts. It is
-                                not sentient, and it does not form intentions of its own; its function is purely to
-                                interpret prompts and provide relevant, well-formed responses based on its training and
-                                programmed capabilities. In short, the objective of ChatGPT is to make powerful language
-                                intelligence accessible and useful to people, enabling them to better engage with
-                                information, solve problems, and express ideas—using natural language as the interface
+                                Another part of its mission is to <strong>assist with productivity and
+                                    decision-making</strong>.
+                                <b>ChatGPT</b> can help users <strong>explore ideas</strong>,
+                                <strong>organize thoughts</strong>, <strong>outline plans</strong>, and <strong>generate
+                                    written
+                                    material efficiently</strong>. It is also designed to <strong>enhance
+                                    learning</strong>, providing explanations
+                                and answers that can be tailored to different levels of understanding.
+
+                                While it mimics conversation, <b>ChatGPT</b> is <strong>not meant to replace
+                                    human interaction</strong>.
+                                Instead, its purpose is to <strong>augment human capability</strong>—acting as a tool
+                                that can support
+                                <strong>thinking</strong>, <strong>communication</strong>, and <strong>creation</strong>
+                                in both professional and personal contexts. It is
+                                <strong>not sentient</strong>, and it <strong>does not form intentions of its
+                                    own</strong>; its function is purely to
+                                <strong>interpret prompts</strong> and <strong>provide relevant, well-formed
+                                    responses</strong> based on its training and
+                                programmed capabilities. In short, the objective of <b>ChatGPT</b> is to
+                                <strong>make powerful language
+                                    intelligence accessible and useful</strong> to people, enabling them to
+                                <strong>better engage with
+                                    information</strong>, <strong>solve problems</strong>, and <strong>express
+                                    ideas</strong>—using natural language as the interface
                                 between human goals and digital systems.
+
                             </span>
                             <button class="readmorebtn">Show more</button>
+                             <div>
+                                <button  class="keywordsbtnenabler">Enable key-words</button>
+                                <button  class="keywordsbtndisabler">Disable key-words</button>
+                            </div>
                         </p>
                     </div>
                 </div>
@@ -138,70 +232,92 @@
             <div class="imageandtextblocks">
                 <div class="text-blocks">
                     <h1>Is AI gonna take over the world?!?!</h1>
-                    <div class="text-blockscroll">
+                    <div class="text-blockarea">
                         <p class="text">
                             <span class="TextContent">
-                                The idea that artificial intelligence will "take over the world" is a common theme in
-                                science fiction,
-                                but in reality, the situation is far more complex and grounded in current technological
-                                limitations and
-                                ethical considerations. AI, including models like ChatGPT, is a tool created by humans
+                                The idea that <strong>artificial intelligence will "take over the world"</strong> is a
+                                common theme in
+                                <strong>science fiction</strong>,
+                                but in reality, the situation is far more <strong>complex</strong> and grounded in
+                                current <strong>technological
+                                    limitations</strong> and
+                                <strong>ethical considerations</strong>. AI, including models like <b>ChatGPT
+                                </b>, is a tool
+                                created by humans
                                 to perform specific
-                                tasks—such as processing language, analyzing data, recognizing patterns, and generating
-                                content. These systems
-                                are not conscious, self-aware, or capable of independent goals or ambitions. They do not
-                                have desires,
-                                intentions, or a will to dominate or control.
+                                tasks—such as <strong>processing language</strong>, <strong>analyzing data</strong>,
+                                <strong>recognizing patterns</strong>, and <strong>generating
+                                    content</strong>. These systems
+                                are <strong>not conscious</strong>, <strong>self-aware</strong>, or capable of
+                                <strong>independent goals or ambitions</strong>. They do not
+                                have <strong>desires</strong>,
+                                <strong>intentions</strong>, or a <strong>will to dominate or control</strong>.
+
+
                             </span>
                             <br />
                         </p>
                         <p class="text">
                             <span class="more">
-                                Artificial intelligence operates under the parameters set by its developers. It follows
-                                instructions, learns patterns from data, and responds based on statistical correlations.
-                                While some AI systems have become highly advanced—able to perform tasks that previously
-                                required human intelligence—they remain fundamentally limited by their programming,
-                                their training data, and the boundaries set by human oversight. They are not autonomous
-                                agents in any meaningful sense of the word.
-                                That said, the widespread use of AI does raise serious and valid concerns. The real
-                                risks are not about AI "taking over" in a dramatic, apocalyptic way, but about how
-                                humans choose to deploy these technologies. These risks include mass surveillance, loss
-                                of privacy, algorithmic bias, job displacement, misinformation, and the concentration of
-                                power in the hands of those who control AI systems. Poorly designed or unregulated AI
-                                can unintentionally cause harm—not because it wants to, but because it is applied
-                                irresponsibly or without sufficient safeguards.
-                                There is also concern among researchers and ethicists about the long-term development of
-                                highly autonomous AI systems. While today's AI is not capable of independent
-                                decision-making in a human sense, future systems could become more powerful and more
-                                influential in critical domains such as finance, infrastructure, defense, and
-                                governance. This is why many experts advocate for transparency, regulation, ethical
-                                frameworks, and international cooperation in AI development—to ensure these technologies
-                                are aligned with human values and are used for beneficial purposes.
-                                In summary, AI is not poised to "take over the world" on its own. The real question is
-                                how humanity chooses to govern and integrate AI into society. It is a powerful
-                                tool—potentially transformative for good or ill—but it remains under human control.
-                                Whether it leads to widespread benefit or disruption.
+                                Artificial intelligence operates under the <strong>parameters</strong> set by its
+                                developers. It follows
+                                <strong>instructions</strong>, learns <strong>patterns</strong> from
+                                <strong>data</strong>, and responds based on <strong>statistical correlations</strong>.
+                                While some AI systems have become <strong>highly advanced</strong>—able to perform tasks
+                                that previously
+                                required <strong>human intelligence</strong>—they remain fundamentally limited by their
+                                <strong>programming</strong>,
+                                their <strong>training data</strong>, and the <strong>boundaries</strong> set by
+                                <strong>human oversight</strong>. They are not <strong>autonomous
+                                    agents</strong> in any meaningful sense of the word.
+                                That said, the <strong>widespread use</strong> of AI does raise <strong>serious</strong>
+                                and <strong>valid concerns</strong>. The real
+                                risks are not about AI <strong>"taking over"</strong> in a dramatic, apocalyptic way,
+                                but about how
+                                <strong>humans</strong> choose to <strong>deploy</strong> these technologies. These
+                                risks include <strong>mass surveillance</strong>, <strong>loss
+                                    of privacy</strong>, <strong>algorithmic bias</strong>, <strong>job
+                                    displacement</strong>, <strong>misinformation</strong>, and the
+                                <strong>concentration of
+                                    power</strong> in the hands of those who control AI systems. <strong>Poorly
+                                    designed</strong> or <strong>unregulated AI</strong>
+                                can unintentionally cause <strong>harm</strong>—not because it wants to, but because it
+                                is applied
+                                <strong>irresponsibly</strong> or without <strong>sufficient safeguards</strong>.
+                                There is also concern among <strong>researchers</strong> and <strong>ethicists</strong>
+                                about the <strong>long-term development</strong> of
+                                <strong>highly autonomous AI systems</strong>. While today's AI is not capable of
+                                <strong>independent
+                                    decision-making</strong> in a human sense, future systems could become more
+                                <strong>powerful</strong> and more
+                                <strong>influential</strong> in <strong>critical domains</strong> such as
+                                <strong>finance</strong>, <strong>infrastructure</strong>, <strong>defense</strong>, and
+                                <strong>governance</strong>. This is why many experts advocate for
+                                <strong>transparency</strong>, <strong>regulation</strong>, <strong>ethical
+                                    frameworks</strong>, and <strong>international cooperation</strong> in AI
+                                development—to ensure these technologies
+                                are aligned with <strong>human values</strong> and are used for <strong>beneficial
+                                    purposes</strong>.
+                                In summary, AI is not poised to <strong>"take over the world"</strong> on its own. The
+                                real question is
+                                how <strong>humanity</strong> chooses to <strong>govern</strong> and
+                                <strong>integrate</strong> AI into <strong>society</strong>. It is a <strong>powerful
+                                    tool</strong>—potentially <strong>transformative</strong> for good or ill—but it
+                                remains under <strong>human control</strong>.
+                                Whether it leads to <strong>widespread benefit</strong> or <strong>disruption</strong>.
+
                             </span>
                             <button class="readmorebtn">Show more</button>
+                             <div>
+                                <button  class="keywordsbtnenabler">Enable key-words</button>
+                                <button  class="keywordsbtndisabler">Disable key-words</button>
+                            </div>
                         </p>
                     </div>
                 </div>
             </div>
         </section>
     </header>
-    <nav class="navbar">
-        <ul class="pages">
-            <li>
-                <a class="image" href="https://chatgpt.com/">
-                    <img src="./img/chatgpt-logo-chat-gpt-icon-on-green-background-free-vector.jpg" alt="ChatGPT Logo">
-                </a>
-            </li>
-            <li>Home</li>
-            <li id="home"><a href="./Pages/founder.html">Founder</a></li>
-            <li><a href="./Pages/history.html">History</a></li>
-            <li><a href="./Pages/examples.html">Examples</a></li>
-        </ul>
-    </nav>
     <script src="logic.js"></script>
 </body>
 

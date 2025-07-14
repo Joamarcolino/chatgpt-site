@@ -10,38 +10,50 @@
 </head>
 
 <body>
-    <header id="content">
-        <section>
-            <div class="example">
-                <section class="scroll-section">
-                    <pre>Scroll</pre>
-                </section>
-                <section class="scroll-section">
-                    <pre>to</pre>
-                </section>
-                <section class="scroll-section">
-                    <pre>trigger</pre>
-                </section>
-                <section class="scroll-section">
-                    <pre>animations!</pre>
-                </section>
-            </div>
-        </section >
-    </header >
     <nav class="navbar">
-        <ul class="pages">
-            <li>
+        <ul class="sidepages">
+            <li onclick="Hidesidepages()"><a style="display: flex; justify-content: end;"><svg
+                        xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px"
+                        fill="#21D694">
+                        <path
+                            d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                    </svg></a></li>
+
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./founder.html">Founder</a></li>
+            <li><a href="./history.html">History</a></li>
+            <li><a id="examples">Examples</a></li>
+            <li id="chatgptimage">
                 <a class="image" href="https://chatgpt.com/">
                     <img src="/img/chatgpt-logo-chat-gpt-icon-on-green-background-free-vector.jpg" alt="ChatGPT Logo">
                 </a>
             </li>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="./founder.html">Founder</a></li>
-            <li><a href="./history.html">History</a></li>
-            <li>Examples</li>
+        </ul>
+        <ul class="pages">
+            <li id="chatgptimage">
+                <a class="image" href="https://chatgpt.com/">
+                    <img src="/img/chatgpt-logo-chat-gpt-icon-on-green-background-free-vector.jpg" alt="ChatGPT Logo">
+                </a>
+            </li>
+            <div class="hide">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./founder.html">Founder</a></li>
+                <li><a href="./history.html">History</a></li>
+                <li><a id="examples">Examples</a></li>
+            </div>
+            <li class="pages-menu">
+                <a onclick="Showsidepages()">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px"
+                        fill="#21D694">
+                        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                    </svg>
+                </a>
+            </li>
         </ul>
     </nav>
-<script src="/logic.js"></script>
+    <header id="content">
+    </header>
+    <script src="/logic.js"></script>
 </body>
 
 </html>
