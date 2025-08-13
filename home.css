@@ -389,6 +389,9 @@
             max-width: 300px;
 
         }
+        #hidepagesonmedia{
+            display: none;
+        }
     }
     @media (max-width:886px) {
         .sidepages {
@@ -397,5 +400,8 @@
 
         .pages-menu {
             display: flex;
+        }
+        .hidepageonmedia{
+            display: none;
         }
     }
